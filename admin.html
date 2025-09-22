@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <h1 class="title">CBT Admin Panel</h1>
+        <p class="description text-center">Manage your test questions here.</p>
+
+        <!-- Question Add/Edit Form -->
+        <div class="section">
+            <h2 class="subtitle">Add/Edit Question</h2>
+            <div class="form-group">
+                <label for="question-input">Question Text:</label>
+                <textarea id="question-input" placeholder="Enter question text"></textarea>
+            </div>
+            <div id="options-form-container">
+                <label>Options (A, B, C, D...):</label>
+                <!-- Option input fields will be added here by JavaScript -->
+                <div class="option-input-group">
+                    <input type="text" class="option-input" placeholder="Option A">
+                    <button type="button" class="remove-option-btn" style="display: none;">X</button>
+                </div>
+                <div class="option-input-group">
+                    <input type="text" class="option-input" placeholder="Option B">
+                    <button type="button" class="remove-option-btn" style="display: none;">X</button>
+                </div>
+                <div class="option-input-group">
+                    <input type="text" class="option-input" placeholder="Option C">
+                    <button type="button" class="remove-option-btn" style="display: none;">X</button>
+                </div>
+                <div class="option-input-group">
+                    <input type="text" class="option-input" placeholder="Option D">
+                    <button type="button" class="remove-option-btn" style="display: none;">X</button>
+                </div>
+            </div>
+            <button type="button" id="add-option-btn" class="add-options-btn">Add Another Option</button>
+
+            <div class="form-group">
+                <label for="correct-answer-input">Correct Answer (enter the exact text of the correct option):</label>
+                <input type="text" id="correct-answer-input" placeholder="e.g., Central Processing Unit">
+            </div>
+            <button id="save-question-btn" class="save-question-btn">Add Question</button>
+            <button id="cancel-edit-btn" class="button secondary-button full-width-button hidden">Cancel Edit</button>
+        </div>
+
+        <!-- Current Questions List -->
+        <div class="section">
+            <h2 class="subtitle">Current Questions</h2>
+            <p id="no-questions-message" class="description text-center hidden">No questions added yet.</p>
+            <ul id="questions-list" class="question-list">
+                <!-- Questions will be dynamically loaded here -->
+            </ul>
+        </div>
+        <p class="admin-link-text text-center">
+            <button id="logout-btn" class="button secondary-button small-button">Logout</button>
+            <a href="/" class="admin-link">Back to CBT Test</a>
+        </p>
+    </div>
+
+    <!-- Custom Modal Structure -->
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="modal-close-btn" class="button primary-button">OK</button>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Control Panel Unit",
+      "Computer Personal Unit",
+      "Central Power Unit"
+    ],
+    "correctAnswerText": "Central Processing Unit"
+  },
+  {
+    "question": "Which of these is an input device?",
+    "options": [
+      "Printer",
+      "Monitor",
+      "Keyboard",
+      "Speaker"
+    ],
+    "correctAnswerText": "Keyboard"
+  },
+  {
+    "question": "What is the main function of RAM?",
+    "options": [
+      "Long-term storage",
+      "Temporary data storage",
+      "Processing calculations",
+      "Managing network connections"
+    ],
+    "correctAnswerText": "Temporary data storage"
+  },
+  {
+    "question": "Which programming language is often used for web development? (e.g., for front-end)",
+    "options": [
+      "C++",
+      "Java",
+      "Python",
+      "HTML"
+    ],
+    "correctAnswerText": "HTML"
+  },
+  {
+    "question": "What does HTTP stand for?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "High-Tech Test Program",
+      "Home Tool Transfer Point",
+      "Hyper Transfer Text Protocol"
+    ],
+    "correctAnswerText": "HyperText Transfer Protocol"
+  },
+  {
+    "question": "What is a byte composed of?",
+    "options": [
+      "1 bit",
+      "4 bits",
+      "8 bits",
+      "16 bits"
+    ],
+    "correctAnswerText": "8 bits"
+  },
+  {
+    "question": "Which of these is an operating system?",
+    "options": [
+      "Microsoft Word",
+      "Google Chrome",
+      "Linux",
+      "Adobe Photoshop"
+    ],
+    "correctAnswerText": "Linux"
+  },
+  {
+    "question": "What is an algorithm?",
+    "options": [
+      "A type of computer virus",
+      "A set of instructions to solve a problem",
+      "A hardware component",
+      "A network protocol"
+    ],
+    "correctAnswerText": "A set of instructions to solve a problem"
+  },
+  {
+    "question": "What does 'GUI' stand for?",
+    "options": [
+      "General User Interface",
+      "Graphical User Interface",
+      "Global Utility Index",
+      "Graphics Unit Integration"
+    ],
+    "correctAnswerText": "Graphical User Interface"
+  },
+  {
+    "question": "Which company developed the Python programming language?",
+    "options": [
+      "Microsoft",
+      "Google",
+      "Apple",
+      "Guido van Rossum"
+    ],
+    "correctAnswerText": "Guido van Rossum"
+  },
+  {
+    "question": "Who is CYBERDODO?",
+    "options": [
+      "Uncle John",
+      "Uncle Bob",
+      "Uncle Jim",
+      "Uncle Dodo"
+    ],
+    "correctAnswerText": "Uncle Dodo"
+  },
+  {
+    "question": "What differentiates a BLACKHAT hacker and a WHITEHAT hacker?",
+    "options": [
+      "Their purpose",
+      "The colour of their hat",
+      "BlackHat works in dark place",
+      "WhiteHat has a kind Heart"
+    ],
+    "correctAnswerText": "Their purpose"
+  }
+]

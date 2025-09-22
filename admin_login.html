@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <h1 class="title">Admin Login</h1>
+        <p class="description text-center">Enter the passkey to access the Admin Panel.</p>
+
+        <div class="form-group">
+            <label for="passkey-input">Passkey:</label>
+            <input type="password" id="passkey-input" placeholder="Enter admin passkey" class="input-field text-center">
+        </div>
+        <p id="login-feedback" class="feedback-message text-center"></p>
+        <button id="login-btn" class="button primary-button full-width-button">
+            Login
+        </button>
+        <p class="admin-link-text text-center">
+            <a href="/" class="admin-link">Back to CBT Test</a>
+        </p>
+    </div>
+
+    <!-- Custom Modal Structure -->
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="modal-close-btn" class="button primary-button">OK</button>
+        </div>
+    </div>
+
+    <script src="admin_login.js"></script>
+</body>
+</html>

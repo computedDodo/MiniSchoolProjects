@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science CBT</title>
+    <!-- Custom CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Welcome/Registration Section -->
+        <div id="welcome-section" class="section text-center">
+            <h1 class="title">Computer Science CBT</h1>
+            <p class="description">Welcome! Please enter your registration number to begin.</p>
+            <input type="text" id="reg-number-input" placeholder="Enter Registration Number" class="input-field">
+            <p id="reg-feedback" class="feedback-message"></p>
+            <button id="validate-reg-btn" class="button primary-button">
+                Validate & Proceed
+            </button>
+            <p class="admin-link-text">
+                <a href="/admin_login" class="admin-link">Go to Admin Login</a>
+            </p>
+        </div>
+
+        <!-- Start Test Section (hidden initially) -->
+        <div id="start-test-section" class="section text-center hidden">
+            <h2 class="subtitle">Welcome, <span id="user-name-display" class="highlight"></span>!</h2>
+            <p class="description">Registration Number: <span id="reg-number-display" class="font-medium"></span></p>
+            <p class="description">Press 'T' (or click the button) to start the test.</p>
+            <button id="start-test-btn" class="button success-button large-button">
+                Start Test
+            </button>
+        </div>
+
+        <!-- Test Section (hidden initially) -->
+        <div id="test-section" class="section hidden">
+            <div class="test-header">
+                <p class="question-count">Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span></p>
+                <p class="timer">Time Left: <span id="timer-display" class="highlight">10:00</span></p>
+            </div>
+            <h3 id="question-text" class="question-text"></h3>
+
+            <div id="options-container" class="options-container">
+                <!-- Options will be dynamically inserted here by JavaScript -->
+            </div>
+
+            <div class="navigation-buttons">
+                <button id="prev-q-btn" class="button secondary-button" disabled>
+                    Previous (P)
+                </button>
+                <button id="next-q-btn" class="button primary-button">
+                    Next (N)
+                </button>
+            </div>
+            <button id="submit-test-btn" class="button danger-button full-width-button">
+                Submit Test (Y)
+            </button>
+        </div>
+
+        <!-- Results Section (hidden initially) -->
+        <div id="results-section" class="section text-center hidden">
+            <h2 class="subtitle">Test Completed!</h2>
+            <p class="description">User: <span id="results-user-name" class="font-medium"></span> (<span id="results-reg-number" class="font-medium"></span>)</p>
+            <p class="final-score">Score: <span id="final-score"></span></p>
+            <p class="description">Thank you for taking the test!</p>
+            <p class="warning-message">
+                Note: This application uses a simple Flask server for question management. For production use, consider robust authentication and database solutions.
+            </p>
+        </div>
+    </div>
+
+    <!-- Custom Modal Structure -->
+    <div id="custom-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="modal-close-btn" class="button primary-button">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
